@@ -10,7 +10,10 @@ python = "^3.11"
 sharespec = { path =  "../sharespec",develop = true}
 first = { path =  "../first",develop = true}
 second = { path =  "../second",develop = true}
+fire = "^0.6.0"
 
+[tool.poetry.scripts]
+bootstrap = 'bootstrap.app:main'
 
 [build-system]
 requires = ["poetry-core"]
