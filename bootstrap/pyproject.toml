@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "bootstrap"
+version = "0.1.0"
+description = ""
+authors = ["rongfengliang <1141591465@qq.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sharespec = { path =  "../sharespec",develop = true}
+first = { path =  "../first",develop = true}
+second = { path =  "../second",develop = true}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

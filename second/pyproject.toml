@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "second"
+version = "0.1.0"
+description = ""
+authors = ["rongfengliang <1141591465@qq.com>"]
+readme = "README.md"
+packages = [
+    { include = "second", from = "." }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pluggy = "^1.4.0"
+sharespec = { path =  "../sharespec",develop = false}
+
+[tool.poetry.plugins."mydemoapp"]
+"pluginb" = "second.pluginb:MyPluginB"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

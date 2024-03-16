@@ -1,0 +1,6 @@
+venv
+.env
+.venv
+.idea
+.DS_Store
+*.pyc

@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "first"
+version = "0.1.0"
+description = ""
+authors = ["rongfengliang <1141591465@qq.com>"]
+readme = "README.md"
+packages = [
+    { include = "first", from = "." }
+]
+
+[tool.poetry.plugins."mydemoapp"]
+"plugina" = "first.plugina:MyPluginA"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pluggy = "^1.4.0"
+sharespec = { path =  "../sharespec",develop = false}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

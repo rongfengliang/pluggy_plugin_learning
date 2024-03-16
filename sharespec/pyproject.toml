@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "sharespec"
+version = "0.1.0"
+description = ""
+authors = ["rongfengliang <1141591465@qq.com>"]
+readme = "README.md"
+packages = [
+    { include = "sharespec", from = "." }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pluggy = "^1.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
