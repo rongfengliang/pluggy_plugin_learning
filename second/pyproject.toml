@@ -13,7 +13,7 @@ python = "^3.11"
 pluggy = "^1.4.0"
 sharespec = { path =  "../sharespec",develop = false}
 
-[tool.poetry.plugins."mydemoapp"]
+[tool.poetry.plugins."mydemoapptest"]
 "pluginb" = "second.pluginb:MyPluginB"
 
 [build-system]
