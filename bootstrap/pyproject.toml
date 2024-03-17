@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "bootstrap"
-version = "0.1.0"
+version = "0.3.0"
 description = ""
 authors = ["rongfengliang <1141591465@qq.com>"]
 readme = "README.md"
@@ -8,9 +8,12 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 sharespec = { path =  "../sharespec",develop = true}
-first = { path =  "../first",develop = true}
-second = { path =  "../second",develop = true}
+first = { path =  "../first",develop = true,optional = true}
+second = { path =  "../second",develop = true,optional = true}
 fire = "^0.6.0"
+
+[tool.poetry.extras]
+plugins = ["first", "second"]
 
 [tool.poetry.scripts]
 bootstrap = 'bootstrap.app:main'
